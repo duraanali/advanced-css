@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*  Reset Stop */
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Titillium Web", sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.25;
+  }
+  
+
+  
+  h1, h2, h3, h4 {
+    font-family: "Bangers", serif;
+  }
+  
+  .logo {
+    display: block;
+    margin: 1rem auto;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #000000;
+    text-decoration: none;
+    border-top: 1px solid #B4B6B7;
+    border-bottom: 1px solid #B4B6B7;
+    padding: .5rem 0;
+  }
+  
+  header {
+    text-align: center;
+    padding-bottom: 3rem;
+    margin: 0 1rem;
+    border-bottom: 2px solid black
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  
+  header button {
+    border: 1px solid black;
+    color: black;
+    padding: .1rem 2.5rem;
+  }
+  
+  #hero-img {
+    display: none;
+  }
+  
+  section {
+    margin: 0 1rem;
+  }
+  
+  #nav-bar {
+    margin: 0;
+  }
+  
+  section div {
+    margin: 2rem 0;
+  }
+  
+  section h2 {
+    font-size: 1.25rem;
+    margin: 0 0 .5rem;
+  }
+  
+  section p {
+    font-size: .9rem;
+    margin: 0;
+  }
+  
+  #secondary-details {
+    border-bottom: 2px solid black;
+  }
+  
+  .middle-img {
+    max-width: 100%;
+  }
+  
+  address {
+    font-style: normal;
+  }
+  
+  address p {
+    margin: 0 0 .75rem;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: .8rem;
+  }
+  
+  @media (min-width: 500px) {
+    nav {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    
+    nav a {
+      border: 0;
+    }
+    
+    header h1 {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    header button {
+      font-size: 1rem;
+    }
+    
+    #primary-details, #secondary-details {
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    #primary-details div {
+      width: 48%;
+    }
+    
+    #secondary-details div {
+      width: 30%;
+    }
+  }
+  
+  @media (min-width: 800px) {
+    #nav-bar {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 0;
+      margin-bottom: 3rem;
+    }
+    
+    .logo {
+      margin: 0 0 0 2rem;
+    }
+    
+    nav a {
+      margin: 0 1.2rem;
+    }
+    
+    header {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    header div {
+      width: 50%
+    }
+    
+    #hero-img {
+      display: block;
+      width: 350px;
+      height: auto;
+    }
+  }
